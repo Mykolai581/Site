@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/resetStyle.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/adaptive.css" />
+    <title>Site</title>
+  </head>
+  <body>
+    <div class="background-overlay"></div>
+
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__menu menu">
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#about" data-i18n="about" class="menu__link"
+                    >About Me</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a href="#myProjects" data-i18n="project" class="menu__link"
+                    >My Projects</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a href="#myServices" data-i18n="services" class="menu__link"
+                    >My services</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a href="#contact" data-i18n="contact" class="menu__link"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="lang-wrapper">
+            <button id="lang-toggle" class="lang-toggle-button">EN</button>
+            <div id="lang-menu" class="lang-menu hidden">
+              <ul>
+                <li data-lang="ua">UA</li>
+                <li data-lang="en">EN</li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__contact">
+            <div data-i18n="number" class="header__text">My phone number</div>
+            +380 96 880 79 56
+          </div>
+
+          <button class="menu__button" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+      <main class="main">
+        <section class="main__aboutMe aboutMe" id="about">
+          <div class="aboutMe__container">
+            <div class="aboutMe__content animation">
+              <h2 class="aboutMe__title title" data-i18n="aboutTitle">
+                About me
+              </h2>
+              <div class="aboutMe__text">
+                <p data-i18n="aboutText1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eligendi quod ratione quisquam obcaecati neque voluptas
+                  laboriosam repellendus aliquid, commodi dolor porro. Fugiat
+                  quod veniam cum iure ut dicta illum neque.
+                </p>
+                <p data-i18n="aboutText2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam asperiores totam cumque soluta reprehenderit sit!
+                  Autem, sequi ratione ullam natus necessitatibus, obcaecati
+                  quas nostrum quia corporis iste neque ea mollitia.
+                </p>
+                <p data-i18n="aboutText3">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Suscipit officia obcaecati mollitia temporibus modi ullam in,
+                  veniam iusto sequi impedit. Eveniet atque ea et quos minus.
+                  Explicabo nesciunt velit delectus.
+                </p>
+              </div>
+            </div>
+            <div class="aboutMe__image animation">
+              <img data-src="./img/Image.jpg" alt="Image" class="lazy" />
+            </div>
+          </div>
+        </section>
+        <section class="main__myProjects myProjects" id="myProjects">
+          <div class="myProjects__container">
+            <h2
+              class="myProjects__title title animation"
+              data-i18n="projectsTitle"
+            >
+              My projects
+            </h2>
+            <div class="myProjects__items"></div>
+          </div>
+        </section>
+        <section class="main__myServices myServices" id="myServices">
+          <div class="myServices__container">
+            <h2
+              class="myServices__title title animation"
+              data-i18n="servicesTitle"
+            >
+              My services
+            </h2>
+            <div class="myServices__content">
+              <div class="myServices__text animation">
+                <p data-i18n="servicesText1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Numquam amet enim dolor pariatur maiores! Minima officiis
+                  beatae itaque quibusdam vitae dolor iste perferendis dolores,
+                  illo ea iure reiciendis animi? Excepturi!
+                </p>
+                <p data-i18n="servicesText2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Numquam amet enim dolor pariatur maiores! Minima officiis
+                  beatae itaque quibusdam vitae dolor iste perferendis dolores,
+                  illo ea iure reiciendis animi? Excepturi!
+                </p>
+                <p data-i18n="servicesText3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Numquam amet enim dolor pariatur maiores! Minima officiis
+                  beatae itaque quibusdam vitae dolor iste perferendis dolores,
+                  illo ea iure reiciendis animi? Excepturi!
+                </p>
+                <p data-i18n="servicesText4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Numquam amet enim dolor pariatur maiores! Minima officiis
+                  beatae itaque quibusdam vitae dolor iste perferendis dolores,
+                  illo ea iure reiciendis animi? Excepturi!
+                </p>
+              </div>
+              <div class="myServices__image animation">
+                <img data-src="./img/Image2.jpg" alt="Image" class="lazy" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer" id="contact">
+        <div class="footer__container">
+          <h2 class="footer__title title">Contact</h2>
+          <div class="footer__numbers">My work numbers:</div>
+          <div class="footer__number-phone">+380 96 880 79 56</div>
+          <div class="footer__number-phone">+380 96 880 79 56</div>
+          <a href="mailto:example@gmail.com" class="footer__email"
+            >Write to the mail</a
+          >
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="./script/script.js"></script>
+  </body>
+</html>
